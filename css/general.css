@@ -1,0 +1,57 @@
+/* 2- General Css Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+/* يزودوا العرض بتاع العنصر انما يأخذوا من العرض اللي موجود padding ولا الـ border دا معناه أنه ميخليش الـ   */
+}
+
+:root {
+    --mainColor  : #6195ff;
+    --grayColor  : #999;
+    --bg-gray    : #f9f9f9;
+    --whiteColor : #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;   /* عشان يبقى في النصف margin:auto عشان كده اديته block هذا العنصر */
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+.clear {
+    clear: both;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: montserrat,sans-serif;
+}
+button {
+    font-family: inherit;  /* بمعنى هاتلي خط الكتابة بتاع الموقع بتاعي */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pd-y {
+    padding: 100px 0;
+}
+.section-header {
+    text-align: center;
+}
+.section-header .section-title {
+    font-size: 35px;
+}
+.section-header .line {
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin: 0 auto 70px auto;
+    background-color: var(--mainColor);
+}

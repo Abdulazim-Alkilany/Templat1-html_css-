@@ -1,0 +1,78 @@
+/* 
+    1- Common Styles
+    2- General Styles
+    3- Sections
+        3.0- Header Section
+        3.1- Home Section
+        3.2- About Section
+        3.3- Portfolio Section
+        3.4- Services Section
+        3.5- Prices Section
+        3.6- Team Section
+        3.7- Blog Section
+        3.8- Contact Section
+        3.9- Footer Section
+*/
+
+/* 1- Common Styles  الحاجات المشتركة في الويب سايت كله */
+/*
+    - overlay
+    - opacity hover
+    - section header   بمعنى أن كل سيكشن له نفس الهيدر والخط اللي تحته
+    - section padding
+    - hover effect1  ( left to right )
+    - hover effect2  ( top to bottom )
+*/
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hover-opacity {
+    transition: opacity .5s;
+}
+.hover-opacity:hover {
+    opacity: 0.8;
+}
+
+.ltr-effect , 
+.tb-effect {
+    position: relative;
+}
+.ltr-effect:after , 
+.tb-effect:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #333;
+    z-index: -1;   /* دا هيخليلي الخلفية وراء الكلام */
+}
+
+.ltr-effect:after {
+    width: 0;
+    height: 100%;
+    transition: width 0.5s;
+}
+.ltr-effect:hover:after {
+    width: 100%;
+}
+
+.tb-effect:after {
+    width: 100%;
+    height: 0;
+    transition: height 0.5s;
+}
+.tb-effect:hover:after {
+    height: 100%;
+}
+
+
+
+/* Contact Section */
+
